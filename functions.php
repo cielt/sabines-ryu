@@ -27,17 +27,21 @@ add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles', 'include_font_linowrit
 add_action( 'init', 'register_writing', 1);
 function register_writing() {
 	$labels = array( // Used in the WordPress admin
-		'name' => _x('Writings', 'post type general name'),
+		'name' => _x('Writing', 'post type general name'),
 		'singular_name' => _x('Writing', 'post type singular name'),
 		'add_new' => _x('Add New', 'Writing'),
 		'add_new_item' => __('Add New Writing'),
 		'edit_item' => __('Edit Writing'),
 		'new_item' => __('New Writing'),
 		'view_item' => __('View Writing'),
-		'search_items' => __('Search Writings'),
+		'search_items' => __('Search Writing'),
 		'not_found' =>  __('Nothing found'),
 		'not_found_in_trash' => __('Nothing found in Trash')
 	);
+
+	// TODO: add checkboxes for 
+	// exclude from writing feed
+	// include in home page features
 
 	$args = array(
 		'labels' => $labels, // Set above
@@ -48,9 +52,9 @@ function register_writing() {
 		'has_archive' => true, // Activate the archive
 		'supports' => array('title',
 												'editor',
-												'thumbnail',
 												'excerpt',
-												'custom_fields')
+												'thumbnail',
+												'custom_fields') // custom: URLs
 	);
 
 	register_post_type( 'writing', $args ); // Create the post type, use options above
