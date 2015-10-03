@@ -8,7 +8,6 @@
 	
 	<!-- feature image -->
 	<div class="image-frame block-image column col-1">
-		<!-- <img src="<?php // echo get_stylesheet_directory_uri() ?>/images/demo/home-feature-among-murderers.png" alt="Among Murderers book cover"> -->
 		<?php the_post_thumbnail('full'); ?>
 	</div>
 	<!-- feature info -->

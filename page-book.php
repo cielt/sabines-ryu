@@ -28,17 +28,17 @@ get_header(); ?>
 						'orderby' => 'meta_value', 
 						'order' => 'DESC',
 						'post_type' => 'writing',
-						'meta_query'	=> array(
-							'relation'		=> 'AND',
+						'meta_query' => array(
+							'relation' => 'AND',
 							array(
-								'key'	 	=> 'include_on_book_page',
-								'value'	  	=> '1',
-								'compare' 	=> '=',
+								'key'	=> 'include_on_book_page',
+								'value' => '1',
+								'compare' => '=',
 							),
 							array(
-								'key'	  	=> 'publication_date',
-								'value'	  	=> '',
-								'compare' 	=> '!=',
+								'key' => 'publication_date',
+								'value' => '',
+								'compare' => '!=',
 							),
 						)
 					);
