@@ -214,6 +214,10 @@ body {
 	min-height: 16px;
 }
 
+.tile-link + .caption {
+	margin-top: 3px;
+}
+
 .credit {
 	display: block;
 	text-align: right;
