@@ -7,8 +7,22 @@
 	</div>	
 	
 	<!-- feature image -->
-	<div class="image-frame block-image column col-1">
-		<?php the_post_thumbnail('full'); ?>
+	<div class="column col-1">
+		<div class="image-frame block-image">
+			<?php the_post_thumbnail('home-feature-tile'); ?>
+		</div>
+		<?php // if AM, include ippy medal 
+			$current_title = get_the_title();
+			if (stristr($current_title, 'among murderers') !== false) : ?>	
+			<div class="block-image-info book-honors clearfix">
+				<div class="thumbnail-book-honors"><img src="<?php echo get_site_url() ?>/wp-content/uploads/2015/10/ippy-gold-medal.png"></div>
+				<div class="book-honors-info">
+					<span class="kicker gold">Gold Medal Winner</span>
+					<span class="book-honors-title">2014 IPPY Awards</span>
+					<span class="book-honors-meta">Current Events II (Social Issues / Public Affairs / Ecological / Humanitarian)</span>
+				</div>
+			</div>	
+		<?php endif; ?>
 	</div>
 	<!-- feature info -->
 	<div class="block-info column col-2">
