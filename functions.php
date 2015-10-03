@@ -8,7 +8,7 @@
 if ( function_exists( 'add_theme_support' ) ) { 
 	add_theme_support( 'post-thumbnails' );
 	// additional image sizes
-	add_image_size( 'home-feature-tile', 348, 480, true ); //236 pixels wide (and unlimited height)
+	add_image_size( 'home-feature-tile', 348, 480, true );
 }
 
 function theme_enqueue_styles() {

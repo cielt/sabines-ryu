@@ -146,18 +146,18 @@ body {
 	overflow: hidden;
 }
 
-.image-frame.feature-thumbnail {
+.tile-image {
 	margin-bottom: 8px;
 }
 
-.feature-thumbnail > .tile-link {
+.feature-thumbnail.tile-link {
 	display: block;
 	max-height: 312px;
 	overflow: hidden;
 }
 
-.feature-thumbnail > .tile-link:hover,
-.feature-thumbnail > .tile-link:focus {
+.feature-thumbnail.tile-link:hover,
+.feature-thumbnail.tile-link:focus {
 	opacity: 0.75;
 }
 
@@ -214,8 +214,12 @@ body {
 	min-height: 16px;
 }
 
-.tile-link + .caption {
+.image-frame + .caption {
 	margin-top: 3px;
+}
+
+.caption + p {
+	margin-top: 3em;
 }
 
 .credit {
@@ -240,7 +244,8 @@ body {
 
 /* TODO: standardize "work" title style */
 .book-title {
-	font-size: 36px;				
+	font-size: 40px;
+	font-family: linowrite, monospace;				
 }
 
 .meta {
@@ -311,6 +316,48 @@ p + cite {
 	margin-top: 1em;
 }
 
+.block-image + .block-image-info {
+	margin-top: 1em;
+}
+
+.thumbnail-book-honors {
+	width: 25%;
+	float: left;
+}
+
+.thumbnail-book-honors > img {
+	width: 100%;
+}
+
+.thumbnail-book-honors + .book-honors-info {
+	margin-left: 30%;
+}
+
+.book-honors-info .kicker, 
+.book-honors-info .book-honors-title, 
+.book-honors-info .book-honors-meta {
+	display: block;
+	font-size: 0.8em;
+	font-family: Lato, sans-serif;
+	line-height: normal;
+	margin-bottom: 0.25em;
+}
+
+.book-honors-info .kicker {
+	font-size: 1em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.book-honors-info .kicker.gold {
+	color: #998546;
+}
+
+.book-honors-info .book-honors-title {
+	font-weight: bold;
+}
+
+
 /* CTAs
 ------------------------------------ */
 .block-links {
@@ -342,6 +389,8 @@ p + cite {
 	background-color: #000;
 }
 
+
+
 /* Footer
 ------------------------------------ */
 .site-info {
@@ -370,7 +419,7 @@ p + cite {
 		border: none;
 	}
 
-	.image-frame.feature-thumbnail {
+	.tile-image {
 		width: 25%;
 		float: left;
 		margin-bottom: 0;
@@ -408,20 +457,24 @@ p + cite {
 /* responsive - compact
 ------------------------------------ */
 @media screen and (max-width: 460px) {
+	.hentry {
+		padding: 36px 0;
+	}
+
 	.site-title {
 		font-size: 3.6em;
 	}
 
-	.image-frame.feature-thumbnail, .feature-info {
+	.tile-image, .feature-info {
 		width: 100%;
 		float: none;
 	}
 
-	.image-frame.feature-thumbnail {
+	.tile-image {
 		margin-bottom: 18px;
 	}
 
-	.feature-thumbnail > .tile-link {
+	.feature-thumbnail.tile-link {
 		max-height: 100%;
 	}
 
@@ -434,6 +487,11 @@ p + cite {
 
 	.section .column.col-2 {
 		margin-bottom: 0;
+	}
+
+	/* BOOKS */
+	.book-title {
+		font-size: 32px;
 	}
 
 }
