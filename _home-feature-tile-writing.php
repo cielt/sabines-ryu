@@ -1,8 +1,8 @@
 <article class="tile-feature clear">
 	<!-- feature thumb -->
-	<div class="image-frame feature-thumbnail">
-		<a class="tile-link" href="<?php echo get_field('home_page_feature_url') ?>">
-			<?php the_post_thumbnail('full'); ?>
+	<div class="tile-image">
+		<a class="image-frame feature-thumbnail tile-link" href="<?php echo get_field('home_page_feature_url') ?>">
+			<?php the_post_thumbnail('home-feature-tile'); ?>
 		</a>
 		<figcaption class="caption">			
 			<?php if (get_field('image_credit')) : ?><span class="credit"><?php echo get_field('image_credit') ?></span><?php endif;?>
