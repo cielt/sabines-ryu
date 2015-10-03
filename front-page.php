@@ -22,8 +22,10 @@ get_header(); ?>
 				<?php 
 					$args= array(
 						'post_type' => 'writing',
-						'meta_key' => 'is_home_page_feature', 
-						'meta_value' => '1'
+						'posts_per_page' => 4,
+						'meta_key' => 'home_page_feature_order', 
+						'orderby' => '1',
+						'order' => 'ASC'
 					);
 
 					$home_features_query = new WP_Query($args);	
