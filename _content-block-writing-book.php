@@ -14,7 +14,7 @@
 		<?php // if AM, include ippy medal 
 			$current_title = get_the_title();
 			if (stristr($current_title, 'among murderers') !== false) : ?>	
-			<div class="block-image-info book-honors clearfix">
+			<div class="block-image-info book-honors clear">
 				<div class="thumbnail-book-honors"><img src="<?php echo get_site_url() ?>/wp-content/uploads/2015/10/ippy-gold-medal.png"></div>
 				<div class="book-honors-info">
 					<span class="kicker gold">Gold Medal Winner</span>
