@@ -362,13 +362,15 @@ p + cite {
 .row-event {
 	margin-bottom: 3em;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	text-align: center;
+}
+
+.row-event:last-of-type {
+	border: none;
 }
 
 .event-when-where, .event-details, .more-info {
-	display: inline-block;
-	vertical-align: top;
 	text-align: left;
+	float: left;
 }
 
 .event-title {
@@ -382,8 +384,8 @@ p + cite {
 }
 
 .event-details {
-	width: 63%;
-	margin: 0 3%;
+	width: 59%;
+	margin: 0 5%;
 }
 
 .more-info {
@@ -395,17 +397,13 @@ p + cite {
 	display: block;
 }
 
-.event-date-calendar-date {
+.event-date-calendar-date, .venue-name {
 	font-weight: bold;
 	text-transform: uppercase;
 }
 
 .time-date + .venue-info {
 	margin-top: 0.5em;
-}
-
-.venue-name {
-	font-weight: bold;
 }
 
 .event-date-start-time, .venue-address {
@@ -510,6 +508,19 @@ p + cite {
 	}
 
 }
+
+/* responsive - mid
+------------------------------------ */
+@media screen and (max-width: 600px) {
+	/* EVENTS */
+	.event-when-where, .event-details, .more-info {
+		width: 100%;
+		margin: 0 auto 1.5em;
+		float: none;
+	}
+
+}
+
 
 /* responsive - compact
 ------------------------------------ */

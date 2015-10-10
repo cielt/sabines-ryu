@@ -1,5 +1,5 @@
-<article class="row-event clear">
-	<div class="feature-info clear">
+<article class="row-event">
+	<div class="event-info clear">
 		<!-- Date, Venue -->
 		<div class="event-when-where">
 			<div class="time-date">
@@ -26,15 +26,22 @@
 		</div>
 		<!-- Event Info -->
 		<div class="event-details">
-			<h3 class="event-title"><a href="<?php echo get_field('more_info_url') ?>">
-				<?php the_title() ?></a></h3>
+			<h3 class="event-title">
+			<?php if (get_field('more_info_url')) : ?>
+			<a href="<?php echo get_field('more_info_url') ?>"><?php the_title() ?></a>
+			<?php else :
+				the_title(); 
+			endif ?>
+			</h3>	
 			<p class="feature-detail"><?php the_content() ?></p>
 		</div>
 		<!-- More Info -->
 			<div class="more-info ">
+				<?php if (get_field('more_info_url')) : ?>
 				<ul class="block-links">
 					<li><a class="block-link" href="<?php echo get_field('more_info_url') ?>">Details</a></li>
 				</ul>
+			<?php endif ?>
 			</div>
 	</div>
 </article>
