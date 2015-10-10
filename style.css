@@ -65,6 +65,8 @@ body {
 /* Feed Post Titles */
 .entry-title {
 	font-size: 2.4em;
+	font-family: 'Linowrite', monospace;
+	font-style: normal;
 }
 
 /* Page Titles */
@@ -218,7 +220,7 @@ body {
 	margin-top: 3px;
 }
 
-.caption + p {
+.caption + p, .image-frame + p {
 	margin-top: 3em;
 }
 
@@ -270,7 +272,14 @@ body {
 	margin: 0 0 5%;
 }
 
-/* blockquote */
+/* TAG blockquote */
+blockquote p {
+	font-size: 24px;
+	margin-bottom: 18px;
+	font-family: georgia, 'times new roman', serif;	
+}
+
+/* CLASS blockquote */
 .blockquote {
 	border-left: 10px solid #ccc;
 	margin: 0 auto 4em;
@@ -563,6 +572,16 @@ p + cite {
 	}
 
 }
+
+/* Plugin overrides
+------------------------------------ */
+.jp-carousel-comments, #jp-carousel-comments-loading {
+	display: none;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+
 
 
 
