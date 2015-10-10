@@ -33,7 +33,7 @@
 				the_title(); 
 			endif ?>
 			</h3>	
-			<p class="feature-detail"><?php the_content() ?></p>
+			<div class="feature-detail"><?php the_content() ?></div>
 		</div>
 		<!-- More Info -->
 			<div class="more-info ">
