@@ -15,10 +15,6 @@ get_header(); ?>
 				<!-- PAGE TITLE -->
 				<header class="entry-header">
 					<?php the_title( '<h1 class="entry-title h-sans">', '</h1>' ); ?>
-					<!-- <div class="entry-meta">
-						<?php // edit_post_link( __( 'Edit', 'ryu' ), '<span class="edit-link">', '</span>' ); ?>
-					</div> -->					
-					<!-- .entry-meta -->
 				</header><!-- .entry-header -->
 
 				<div class="entry-content full-width clear">

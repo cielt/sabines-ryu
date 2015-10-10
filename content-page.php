@@ -17,6 +17,9 @@
 		<header class="entry-header">
 			<?php the_title( '<h1 class="entry-title h-sans">', '</h1>' ); ?>
 			<div class="entry-meta">
+				<?php if (get_field('page_subtitle')) : ?>
+					<span class="page-subtitle"><?php echo get_field('page_subtitle'); ?></span>
+				<?php endif ?>
 				<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
 				<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'ryu' ), __( '1 Comment', 'ryu' ), __( '% Comments', 'ryu' ) ); ?></span>
 				<?php endif; ?>
