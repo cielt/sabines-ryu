@@ -29,6 +29,17 @@ function include_font_linowrite() {
 
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles', 'include_font_linowrite' );
 
+/* JetPack Carousel: remove comments */
+function tweakjp_rm_comments_att( $open, $post_id ) {
+    $post = get_post( $post_id );
+    if( $post->post_type == 'attachment' ) {
+        return false;
+    }
+    return $open;
+}
+add_filter( 'comments_open', 'tweakjp_rm_comments_att', 10 , 2 );
+
+
 /* Custom Post Types */
 
 /* CUSTOM TYPE: writing */
