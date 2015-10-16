@@ -45,6 +45,24 @@ body {
 	border-color: #fff;
 }
 
+.ico-social {
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+  	border-radius: 50%;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    font: normal 16px/24px Genericons;
+    font-size: 1.6rem;
+    vertical-align: top;
+}
+
+.entry-format-badge {
+	display: none;
+}
 
 /* TYPOGRAPHY
 ------------------------------------ */
@@ -53,7 +71,7 @@ body {
 }
 
 .site-title {
-	font: normal 4.8em/1 'Linowrite', monospace;
+	font: normal 5.6em/1 'Linowrite', monospace;
 	text-transform: none;
 	letter-spacing: 0;
 }
@@ -64,7 +82,7 @@ body {
 
 /* Feed Post Titles */
 .entry-title {
-	font-size: 2.4em;
+	font-size: 2.1em;
 	font-family: 'Linowrite', monospace;
 	font-style: normal;
 }
@@ -227,6 +245,11 @@ span.content-cta {
 	margin-left: 0;
 }
 
+.no-bullet li {
+	line-height: normal;
+	margin-bottom: 1em;
+}
+
 .tile-feature .continue:focus, .tile-feature .continue:hover, .content-cta:focus, .content-cta:hover {
 	color: #000;
 	border-color: #000;
@@ -270,7 +293,7 @@ span.content-cta {
 
 /* TODO: standardize "work" title style */
 .book-title {
-	font-size: 40px;
+	font-size: 2.4em;
 	font-family: linowrite, monospace;				
 }
 
@@ -297,9 +320,15 @@ span.content-cta {
 }
 
 /* TAG blockquote */
+blockquote {
+	padding-left: 2em;
+	border-left: 5px solid #ccc;
+}
+
 blockquote p {
-	font-size: 24px;
-	margin-bottom: 18px;
+	font-size: 1em;
+	line-height: inherit;
+	margin-bottom: 34px;
 	font-family: georgia, 'times new roman', serif;	
 }
 

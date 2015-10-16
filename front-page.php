@@ -49,12 +49,18 @@ get_header(); ?>
 						<h3 class="widget-block-title h-sans">Contact</h3>
 						<ul class="no-bullet">
 							<li><span class="content-cta">sabine [at] sabineheinlein [dot] org</span></li>
+							<li><span class="ico-social" title="Twitter" aria-hidden="true">
+									&#61954;<b class="screen-reader-text">Sabine Heinlein on Twitter</b>
+								</span><a href="https://twitter.com/sabineheinlein" target="_blank" class="content-cta">
+								 @sabineheinlein
+								</a>
+							</li>
 						</ul>
 						</div>
 						<div class="tile-widget last">
 						<h3 class="widget-block-title h-sans">Projects</h3>
 						<ul class="no-bullet">
-							<li><a class="content-cta" href="http://www.sunnysidesoundproject.org/">Sunnyside Sound Project</a></li>
+							<li><a class="content-cta" href="http://www.sunnysidesoundproject.org/" rel="external" target="_blank">Sunnyside Sound Project</a></li>
 						</ul>
 						</div>
 				</div>
