@@ -38,8 +38,8 @@ get_header(); ?>
 						wp_reset_postdata(); ?>
 				</div><!-- /.tiles-wrap -->
 			</div><!-- /.hentry -->
-			<!-- HOME widget blocks -->
-			<nav role="navigation" id="nav-below" class="tiles-wrap page-footer">
+			<!-- Page footer widget blocks -->
+			<div id="nav-below" class="tiles-wrap page-footer">
 				<div class="wrap clear">
 					<div class="tile-widget tile-2x">
 						<h3 class="widget-block-title h-sans">About</h3>
@@ -64,7 +64,7 @@ get_header(); ?>
 						</ul>
 						</div>
 				</div>
-		</nav>
+		</div>
 
 		<?php else : ?>
 
