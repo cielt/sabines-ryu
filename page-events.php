@@ -47,6 +47,8 @@ get_header(); ?>
 				</div><!-- .entry-content -->
 			</div><!-- .entry-wrap -->
 		</section><!-- #page-## -->
+		<!-- page footer -->
+		<?php include '_page-footer-widgets.php' ?>
 </div><!-- #content -->
 </div><!-- #primary -->
 
