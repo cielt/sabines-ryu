@@ -524,6 +524,11 @@ p + cite {
 		font-size: 4em;
 	}
 
+	/* page title */
+	.entry-title.h-sans {
+		font-size: 2.1em;
+	}
+
 	.tile-feature, .tile-widget, .tile-widget.tile-2x {
 		display: block;
 		width: 100%;
