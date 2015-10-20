@@ -38,7 +38,10 @@ get_header(); ?>
 			<?php get_template_part( 'no-results', 'index' ); ?>
 
 		<?php endif; ?>
-
+		<!-- if blog page, include sidebar -->
+		<?php if ( is_home() ) : ?>
+			<?php include '_sidebar-book.php' ?>
+		<?php endif; ?>
 		</div><!-- #content -->
 	</div><!-- #primary -->
 

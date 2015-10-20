@@ -506,6 +506,46 @@ p + cite {
 	border-bottom-width: 2px;
 }
 
+/* Sidebar
+------------------------------------ */
+.site-content {
+	position: relative;
+}
+
+.sidebar-col {
+	width: 18%;
+	max-width: 220px;
+	position: absolute;
+	top: 3em;
+	left: 100%;
+	margin-left: -20%;
+	z-index: 2;
+}
+
+.sidebar-info blockquote.sidebar-quote {
+	font-style: normal;
+	padding: 0;
+	border: 0;
+	font-size: 0.9em;
+}
+
+.sidebar-info blockquote.sidebar-quote p {
+	font-family: Lato, sans-serif;
+}	
+
+.sidebar-info blockquote.sidebar-quote .author {
+	padding: 0;
+	font-size: 0.9em;
+}
+
+.sidebar-info blockquote.sidebar-quote .author:before {
+	width: 0;
+	display: none;
+}
+
+.sidebar-quote + .sidebar-cta {
+	margin-top: 1em;
+}
 
 
 /* Footer
@@ -574,6 +614,16 @@ p + cite {
 		text-align: left;
 	}
 
+	/* Sidebar */
+	.sidebar-col:nth-child(n) {
+		position: relative;
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 72px 48px;
+    top: inherit;
+    left: inherit;
+   }
 }
 
 /* responsive - mid
@@ -628,6 +678,13 @@ p + cite {
 	.book-title {
 		font-size: 32px;
 	}
+
+	/* Sidebar */
+	.sidebar-col:nth-child(n) {
+    max-width: 264px;
+    margin: 0 auto;
+    padding: 36px 0;
+   }
 
 }
 
