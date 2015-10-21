@@ -423,7 +423,7 @@ p + cite {
 ------------------------------------ */
 .row-event {
 	margin-bottom: 3em;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
 }
 
 .row-event:last-of-type {
@@ -513,13 +513,16 @@ p + cite {
 }
 
 .sidebar-col {
-	width: 18%;
+	width: 15%;
 	max-width: 220px;
 	position: absolute;
 	top: 3em;
 	left: 100%;
 	margin-left: -20%;
+	padding: 1em;
 	z-index: 2;
+	border-bottom: none;
+	background: rgba(255, 255, 2555, 0.76);
 }
 
 .sidebar-info blockquote.sidebar-quote {
@@ -574,7 +577,7 @@ p + cite {
 		width: 100%;
 		margin: 0 auto 36px;
 		padding-bottom: 36px;
-		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
 	}
 
 	.tile-feature:last-child, .tile-widget:last-child {
@@ -623,6 +626,7 @@ p + cite {
     padding: 72px 48px;
     top: inherit;
     left: inherit;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
    }
 }
 
