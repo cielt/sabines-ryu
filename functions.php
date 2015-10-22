@@ -46,6 +46,13 @@ function sabines_scripts() {
 		get_stylesheet_directory_uri() . '/js/jquery.waypoints.min.js',
 		array( 'jquery' )
 	);
+
+	wp_enqueue_script(
+		'sabine_js',
+		get_stylesheet_directory_uri() . '/js/app.js',
+		array( 'jquery',
+					 'jquery_waypoints' )
+	);
 }
 
 add_action( 'wp_enqueue_scripts', 'sabines_scripts' );

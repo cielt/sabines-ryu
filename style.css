@@ -186,7 +186,7 @@ body {
 }
 
 .tile-image {
-	margin-bottom: 8px;
+	margin-bottom: 12px;
 }
 
 .feature-thumbnail.tile-link {
@@ -532,6 +532,12 @@ p + cite {
 	background: rgba(255, 255, 2555, 0.76);
 }
 
+.sidebar-col.scroll-fixed {
+	top: 0;
+	margin-top: -1em;
+	position: fixed;
+}
+
 .sidebar-col .feature-thumbnail {
 	height: auto;
 	padding: 0 1.8em;
@@ -551,7 +557,7 @@ p + cite {
 
 .sidebar-info blockquote.sidebar-quote p {
 	font-family: Lato, sans-serif;
-	margin-bottom: 12px;
+	margin-bottom:;
 }	
 
 .sidebar-info blockquote.sidebar-quote .author {
