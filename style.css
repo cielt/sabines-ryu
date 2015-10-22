@@ -181,6 +181,10 @@ body {
 	overflow: hidden;
 }
 
+.image-frame img {
+	display: block;
+}
+
 .tile-image {
 	margin-bottom: 8px;
 }
@@ -309,6 +313,7 @@ span.content-cta {
 
 .section .column.col-1 {
 	width: 25%;
+	max-width: 280px;
 	float: left;
 	margin: 0 5% 5% 0;
 }
@@ -351,6 +356,8 @@ blockquote p {
 	font-style: normal;
 }
 
+blockquote cite { line-height: 1.2; }
+
 .blockquote cite {
 	padding: 0;
 	display: block;
@@ -369,7 +376,7 @@ blockquote p {
 
 .blockquote p {
 	display: inline;
-	font-size: 24px;
+	font-size: 1.3em;
 	margin-bottom: 18px;
 	font-family: georgia, 'times new roman', serif;
 }
@@ -525,6 +532,16 @@ p + cite {
 	background: rgba(255, 255, 2555, 0.76);
 }
 
+.sidebar-col .feature-thumbnail {
+	height: auto;
+	padding: 0 1.8em;
+	border-left: 10px solid #ccc;
+}
+
+.sidebar-col .feature-info .entry-title {
+	font-size: 1.2em;
+}
+
 .sidebar-info blockquote.sidebar-quote {
 	font-style: normal;
 	padding: 0;
@@ -534,6 +551,7 @@ p + cite {
 
 .sidebar-info blockquote.sidebar-quote p {
 	font-family: Lato, sans-serif;
+	margin-bottom: 12px;
 }	
 
 .sidebar-info blockquote.sidebar-quote .author {
@@ -670,6 +688,7 @@ p + cite {
 	/* COLUMNS */
 	.section .column.col-1, .section .column.col-2 {
 		width: 100%;
+		max-width: 100%;
 		margin: 0 auto 3em;
 		float: none;
 	}
