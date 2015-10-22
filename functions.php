@@ -39,6 +39,17 @@ function tweakjp_rm_comments_att( $open, $post_id ) {
 }
 add_filter( 'comments_open', 'tweakjp_rm_comments_att', 10 , 2 );
 
+/* enqueue JS */
+function sabines_scripts() {
+	wp_enqueue_script(
+		'jquery_waypoints',
+		get_stylesheet_directory_uri() . '/js/jquery.waypoints.min.js',
+		array( 'jquery' )
+	);
+}
+
+add_action( 'wp_enqueue_scripts', 'sabines_scripts' );
+
 
 /* Custom Post Types */
 
