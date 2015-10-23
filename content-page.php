@@ -20,10 +20,6 @@
 				<?php if (get_field('page_subtitle')) : ?>
 					<span class="page-subtitle"><?php echo get_field('page_subtitle'); ?></span>
 				<?php endif ?>
-				<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-				<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'ryu' ), __( '1 Comment', 'ryu' ), __( '% Comments', 'ryu' ) ); ?></span>
-				<?php endif; ?>
-
 				<?php edit_post_link( __( 'Edit', 'ryu' ), '<span class="edit-link">', '</span>' ); ?>
 			</div><!-- .entry-meta -->
 		</header><!-- .entry-header -->
