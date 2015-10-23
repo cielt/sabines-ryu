@@ -1,5 +1,4 @@
 <!-- CONTENT BLOCK: writing > book -->
-
 <div class="section book-block clear">
 	<div class="section-heading mb-18 clear">
 		<h2 class="book-title mb-6"><?php the_title() ?></h2>

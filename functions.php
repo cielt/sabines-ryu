@@ -2,7 +2,8 @@
 /**
  * Sabine's Ryu functions and definitions
  *
- * @package SabinesRyu
+ * @package Ryu
+ * @subpackage SabinesRyu
  */
 
 if ( function_exists( 'add_theme_support' ) ) { 

@@ -5,6 +5,7 @@
  * Contains the closing of the id=main div and all content after
  *
  * @package Ryu
+ * @subpackage SabinesRyu
  */
 ?>
 

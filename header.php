@@ -5,6 +5,7 @@
  * Displays all of the <head> section and everything up till <div id="main">
  *
  * @package ryu
+ * @subpackage SabinesRyu
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
