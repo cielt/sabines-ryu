@@ -599,6 +599,22 @@ p + cite {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
    }
 
+	.sidebar-col .tile-image {
+		width: 25%;
+		float: left;
+		margin-bottom: 0;
+	}
+
+	.sidebar-col .feature-info {
+		height: auto;
+		float: right;
+		width: 70%;
+	}
+
+	.sidebar-col .feature-thumbnail {
+		padding: 0;
+		border: none;
+	}
 }
 
 /* responsive - med
@@ -683,12 +699,12 @@ p + cite {
 		font-size: 3.6em;
 	}
 
-	.tile-image, .feature-info {
+	.tile-image, .feature-info, .sidebar-col .tile-image, .sidebar-col .feature-info {
 		width: 100%;
 		float: none;
 	}
 
-	.tile-image {
+	.tile-image, .sidebar-col .tile-image {
 		margin-bottom: 18px;
 	}
 
