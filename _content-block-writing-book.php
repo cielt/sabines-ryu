@@ -1,8 +1,8 @@
 <!-- CONTENT BLOCK: writing > book -->
 
 <div class="section book-block clear">
-	<div class="section-heading l-margin-b-18 clear">
-		<h2 class="book-title l-margin-b-6"><?php the_title() ?></h2>
+	<div class="section-heading mb-18 clear">
+		<h2 class="book-title mb-6"><?php the_title() ?></h2>
 		<span class="meta pub-info"><?php echo get_field('publisher') . ', ' . get_field('publication_date') ?></span>
 	</div>	
 	

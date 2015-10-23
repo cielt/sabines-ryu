@@ -1,14 +1,14 @@
 /*
 Theme Name: Sabine's Ryu
-Theme URI: https://wordpress.com/themes/sabines-ryu/
+Theme URI: 
 Author: cielt
-Author URI: https://wordpress.com/themes/
+Author URI: 
 Template: ryu
 Description: Sabine's Ryu
 Version: 0.0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: black, white, light, one-column, fixed-layout, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, featured-images, flexible-header, post-formats, rtl-language-support, sticky-post, translation-ready
+Tags: black, white, light, one-column
 Text Domain: sabines-ryu
 */
 
@@ -28,11 +28,11 @@ Text Domain: sabines-ryu
 	clear: both;
 }
 
-.l-margin-b-6 {
+.mb-6 {
 	margin-bottom: 6px;
 }
 
-.l-margin-b-18 {
+.mb-18 {
 	margin-bottom: 18px;
 }
 
@@ -364,8 +364,9 @@ blockquote cite { line-height: 1.2; }
 	text-align: right;
 }
 
-.blockquote cite:before {
+.blockquote cite:before, .sidebar-info .sidebar-quote .author:before {
 	content: "\2014";
+	display: inline-block;
 	background: transparent;
 	width: auto;
 	height: auto;
@@ -548,26 +549,21 @@ p + cite {
 	font-size: 1.2em;
 }
 
-.sidebar-info blockquote.sidebar-quote {
+.sidebar-info .sidebar-quote {
 	font-style: normal;
 	padding: 0;
 	border: 0;
 	font-size: 0.9em;
 }
 
-.sidebar-info blockquote.sidebar-quote p {
+.sidebar-info .sidebar-quote p {
 	font-family: Lato, sans-serif;
-	margin-bottom:;
+	margin-bottom: 0.5em;
 }	
 
-.sidebar-info blockquote.sidebar-quote .author {
+.sidebar-info .sidebar-quote .author {
 	padding: 0;
 	font-size: 0.9em;
-}
-
-.sidebar-info blockquote.sidebar-quote .author:before {
-	width: 0;
-	display: none;
 }
 
 .sidebar-quote + .sidebar-cta {
