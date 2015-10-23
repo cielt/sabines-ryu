@@ -1,4 +1,4 @@
-<article class="tile-feature clear">
+<article class="tile-feature home-feature clear">
 	<?php // if external URL, open in new tab 
 			$tile_url = get_field('home_page_feature_url');
 			$tile_url_attrs = '';

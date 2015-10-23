@@ -545,10 +545,6 @@ p + cite {
 	border-left: 10px solid #ccc;
 }
 
-.sidebar-col .feature-info .entry-title {
-	font-size: 1.2em;
-}
-
 .sidebar-info .sidebar-quote {
 	font-style: normal;
 	padding: 0;
@@ -584,12 +580,12 @@ p + cite {
 ------------------------------------ */
 @media screen and (max-width: 1250px) {
 	/* Sidebar */
-	.sidebar-col:nth-child(n) {
+	.sidebar-col {
 		position: relative;
-    width: auto;
+    width: 100%;
     max-width: 100%;
     margin: 0 auto;
-    padding: 72px 48px;
+    padding: 72px 0;
     top: inherit;
     left: inherit;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -608,8 +604,7 @@ p + cite {
 	}
 
 	.sidebar-col .feature-thumbnail {
-		padding: 0;
-		border: none;
+		max-height: 100%;
 	}
 }
 
@@ -625,7 +620,11 @@ p + cite {
 		font-size: 2.1em;
 	}
 
-	.tile-feature, .tile-widget, .tile-widget.tile-2x {
+	.entry-title.feature-title {
+		font-size: 1.4em;
+	}
+
+	.tile-feature.home-feature, .tile-widget, .tile-widget.tile-2x {
 		display: block;
 		width: 100%;
 		margin: 0 auto 36px;
@@ -633,7 +632,11 @@ p + cite {
 		border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
 	}
 
-	.tile-feature:last-child, .tile-widget:last-child {
+	.tile-feature:nth-child(4n), .tile-widget.last {
+    margin-right: inherit;
+	}
+
+	.tile-feature.home-feature:last-child, .tile-widget:last-child {
 		border: none;
 	}
 
@@ -641,6 +644,15 @@ p + cite {
 		width: 25%;
 		float: left;
 		margin-bottom: 0;
+	}
+
+	.sidebar-col {
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);	
+	}
+
+	.sidebar-col .feature-thumbnail {
+		padding: 0;
+		border: none;
 	}
 
 	.feature-info {
@@ -724,13 +736,6 @@ p + cite {
 	.book-title {
 		font-size: 32px;
 	}
-
-	/* Sidebar */
-	.sidebar-col:nth-child(n) {
-    max-width: 264px;
-    margin: 0 auto;
-    padding: 36px 0;
-   }
 
 }
 

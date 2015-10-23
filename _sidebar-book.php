@@ -1,4 +1,5 @@
-<div id="sidebar-book" class="hentry sidebar-col tile-feature clear">
+<div id="sidebar-book" class="hentry sidebar-col tile-feature">
+	<div class="entry-wrap wrap clear">
 	<div class="tile-image">
 		<a class="image-frame feature-thumbnail tile-link" href="http://www.amazon.com/Among-Murderers-Life-after-Prison/dp/0520272854/" target="_blank"><img width="200" height="276" src="<?php echo get_site_url() ?>/wp-content/uploads/2015/09/home-feature-among-murderers.png" class="attachment-home-feature-tile wp-post-image" alt="Among Murderers book cover"></a>
 	</div>
@@ -13,5 +14,6 @@
 				<a class="content-cta clear" href="/book" target="_blank">Learn More</a>
 				<a class="content-cta clear" href="http://www.amazon.com/Among-Murderers-Life-after-Prison/dp/0520272854/" target="_blank">Buy the book</a>
 		</div>
+	</div>
 	</div>
 </div>
