@@ -15,7 +15,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+		<div id="content" class="site-content <?php if ( is_home() ) : ?>has-sidebar<?php endif; ?>" role="main">
 		<?php if ( have_posts() ) : ?>
 			<!-- TODO: implement loop with custom post type for writing features -->
 			<?php /* Start the Loop */ ?>

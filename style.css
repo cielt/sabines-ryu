@@ -585,6 +585,17 @@ p + cite {
 
 /* responsive - large
 ------------------------------------ */
+@media screen and (min-width: 1251px) {
+	/* sidebar adjustments */
+	.has-sidebar .entry-header {
+		margin-right: 228px;
+	}
+
+	.has-sidebar .entry-meta {
+		width: 200px;
+	}
+}
+
 @media screen and (max-width: 1250px) {
 	/* Sidebar */
 	.sidebar-col {
@@ -612,6 +623,11 @@ p + cite {
 
 	.sidebar-col .feature-thumbnail {
 		max-height: 100%;
+	}
+
+	/* sidebar adjustments */
+	.has-sidebar .entry-header {
+		margin-right: 0;
 	}
 }
 
