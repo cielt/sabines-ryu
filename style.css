@@ -172,6 +172,10 @@ body {
 	overflow: hidden;
 }
 
+.tile-widget p:last-child, .tile-widget p:only-child {
+	margin-bottom: 0;
+}
+
 .tile-widget.tile-2x {
 	width: 45%;
 }
