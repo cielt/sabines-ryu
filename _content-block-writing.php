@@ -2,7 +2,7 @@
 <article class="content-block-writing">
 	<!-- Event Info -->
 	<div class="writing-details">
-		<h2 class="entry-title mb-6 h-sans">
+		<h2 class="entry-title mb-12">
 		<?php if (get_field('read_more_url')) : ?>
 		<a href="<?php echo get_field('read_more_url') ?>"><?php the_title() ?></a>
 		<?php else :

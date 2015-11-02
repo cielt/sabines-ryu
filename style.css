@@ -32,6 +32,10 @@ Text Domain: sabines-ryu
 	margin-bottom: 6px;
 }
 
+.mb-12 {
+	margin-bottom: 12px;
+}
+
 .mb-18 {
 	margin-bottom: 18px;
 }
@@ -447,13 +451,14 @@ p + cite {
 }
 
 .content-block-writing .entry-title {
-	font-size: 1.6em;
+	font-size: 1.8em;
 }
 
 .block-meta {
 	display: block;
 	margin-bottom: 0.4em;
 	line-height: normal;
+	color: #808080;
 }
 
 /* Events
