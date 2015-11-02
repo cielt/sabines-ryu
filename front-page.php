@@ -24,7 +24,6 @@ get_header(); ?>
 						'post_type' => 'writing',
 						'posts_per_page' => 4,
 						'meta_query'	=> array(
-						'relation'		=> 'AND',
 							array(
 								'key'	 	=> 'is_home_page_feature',
 								'value'	  	=> '1',
