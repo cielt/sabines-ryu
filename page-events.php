@@ -35,15 +35,6 @@ get_header(); ?>
 						endwhile; 
 						wp_reset_postdata();
 					endif; ?>
-
-				<?php
-				wp_link_pages( array(
-					'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'ryu' ) . '</span>',
-					'after'       => '</div>',
-					'link_before' => '<span>',
-					'link_after'  => '</span>',
-					) );
-					?>
 				</div><!-- .entry-content -->
 			</div><!-- .entry-wrap -->
 		</section><!-- #page-## -->
