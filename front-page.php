@@ -23,8 +23,16 @@ get_header(); ?>
 					$args= array(
 						'post_type' => 'writing',
 						'posts_per_page' => 4,
+						'meta_query'	=> array(
+						'relation'		=> 'AND',
+							array(
+								'key'	 	=> 'is_home_page_feature',
+								'value'	  	=> '1',
+								'compare' 	=> '=',
+							),
+						),
 						'meta_key' => 'home_page_feature_order', 
-						'orderby' => '1',
+						'orderby' => 'meta_value',
 						'order' => 'ASC'
 					);
 
