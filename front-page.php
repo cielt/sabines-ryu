@@ -28,7 +28,7 @@ get_header(); ?>
 							array(
 								'key'	 	=> 'is_home_page_feature',
 								'value'	  	=> '1',
-								'compare' 	=> '=',
+								'compare' 	=> '==',
 							),
 						),
 						'meta_key' => 'home_page_feature_order', 
