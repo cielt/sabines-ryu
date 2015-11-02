@@ -239,7 +239,7 @@ body {
 	line-height: normal;
 }
 
-.tile-feature p {
+.tile-feature p, .content-block-writing p {
 	margin-bottom: 18px;
 }
 
@@ -436,6 +436,24 @@ p + cite {
 
 .book-honors-info .book-honors-title {
 	font-weight: bold;
+}
+
+/* Writing
+------------------------------------ */
+.content-block-writing {
+	padding-bottom: 34px;
+	margin-bottom: 34px;
+	border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
+}
+
+.content-block-writing .entry-title {
+	font-size: 1.6em;
+}
+
+.block-meta {
+	display: block;
+	margin-bottom: 0.4em;
+	line-height: normal;
 }
 
 /* Events
