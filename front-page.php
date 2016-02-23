@@ -22,7 +22,7 @@ get_header(); ?>
 				<?php 
 					$args= array(
 						'post_type' => 'writing',
-						'posts_per_page' => 4,
+						'posts_per_page' => -1,
 						'meta_query'	=> array(
 							array(
 								'key'	 	=> 'is_home_page_feature',
