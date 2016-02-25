@@ -1,10 +1,19 @@
 <article class="tile-feature home-feature clear">
 	<?php // if external URL, open in new tab 
 			$tile_url = get_field('read_more_url');
+			$tile_url_is_external = get_field('is_external_link');
+			$protocols = array('http', 'https');
 			$tile_url_attrs = '';
-			if (stristr($tile_url, 'http://') !== false) {
-				$tile_url_attrs = 'rel="external" target="_blank"';	
-			}	
+			foreach ($protocols as $pre) {
+				if (strpos($tile_url, $pre) !== false) {
+					$tile_url_attrs .= ' rel="external"';	
+					break;		
+				}
+			}
+
+			if ($tile_url_is_external) {
+				$tile_url_attrs .= ' target="_blank"';
+			}
 	 ?>		
 	<!-- feature thumb -->
 	<div class="tile-image">
