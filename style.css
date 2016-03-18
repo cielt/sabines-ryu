@@ -236,7 +236,6 @@ body {
 
 .tile-feature .tile-meta {
 	display: block;
-	font-size: 0.9em;
 	color: #808080;
 	margin-bottom: 0.4em;
 	font-style: italic;
@@ -791,7 +790,7 @@ p + cite {
 
 /* Plugin overrides
 ------------------------------------ */
-.jp-carousel-comments, #jp-carousel-comments-loading {
+.jp-carousel-comments, #jp-carousel-comments-loading, .jp-carousel-image-meta {
 	display: none;
 	width: 0;
 	height: 0;
